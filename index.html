@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Football League</title>
+  <link rel="stylesheet" href="./css/icofont.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-light text-dark">
+  <!-- Header & Nav -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html"><i class="icofont-football-alt"></i> Football League</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#Menu">
+        <i class="icofont-navigation-menu"></i>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="Menu">
+        <div class="navbar-nav align-items-center">
+          <a class="nav-link" href="./fixtures.html"><i class="icofont-calendar"></i> Fixtures</a>
+          <a class="nav-link" href="./livescores.html"><i class="icofont-stopwatch"></i> Live Scores</a>
+          <a class="nav-link active" href="./index.html"><i class="icofont-score-board"></i> Results</a>
+          <a class="nav-link" href="./standings.html"><i class="icofont-listing-number"></i> Standings</a>
+          <a class="nav-link" href="./teams.html"><i class="icofont-shield-alt"></i> Teams</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Results -->
+  <main class="container mt-5 py-5">
+    <h1 class="text-center">Results</h1>
+    <hr>
+    <div id="Results" class="row flex-wrap"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center py-2">
+    <small>
+      <a class="text-light text-decoration-none" href="#">Football League</a> &copy; 2021. <br>
+      <span class="text-secondary">
+        Based on <a class="text-secondary text-decoration-none" href="https://github.com/mochamadboval/FootballLeague">Football League</a> source code.
+      </span>
+    </small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./js/apis/config.js"></script>
+  <script src="./js/apis/results.js"></script>
+</body>
+</html>
