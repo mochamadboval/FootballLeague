@@ -102,7 +102,7 @@ axios.get(`${API_FOOTBALL}${LIVESCORES}`, API_KEY)
             subIconOut += `<i class="icofont-football text-dark"></i>`;
           } else if (event.detail === "Missed Penalty") {
             eventDetail += "Penalty Missed";
-            subIconOut += `<i class="icofont-football text-danger"></i>`;
+            subIconOut += `<i class="icofont-close text-danger"></i>`;
           }
         } else if (event.type === "Card") {
           if (event.detail === "Yellow Card") {
