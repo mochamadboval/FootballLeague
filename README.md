@@ -40,7 +40,7 @@ Karena _API-Football_ memiliki batas pemanggilan API hanya sampai 100 panggilan 
 
 1. Unduh repositori ini.
 2. Daftar akun di [API-Football](https://dashboard.api-football.com/) lalu ambil _API key_ di **Dashboard** > **Account** > **My Access**.
-3. Buat berkas **config.js** di **js/apis** lalu isi dengan kode berikut dan ubah **YOUR_API_KEY** dengan _API key_ milikmu:
+3. Buat berkas **config.js** di **src/js/apis** lalu isi dengan kode berikut dan ubah **YOUR_API_KEY** dengan _API key_ milikmu:
 ```javascript
 // Base API
 const API_FOOTBALL = "https://v3.football.api-sports.io";
@@ -52,7 +52,7 @@ const API_KEY = {
 
 // Query
 const SEASON = 2020;
-const LEAGUE = 39;
+const LEAGUE = 39; // Premier League
 const RANGE = 10;
 
 // Endpoints
