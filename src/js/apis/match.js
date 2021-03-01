@@ -15,13 +15,14 @@ axios.get(`${API_FOOTBALL}${MATCH}${ID}`, API_KEY)
       <img src="${data.teams.home.logo}" alt="${data.teams.home.name}" height=75>
     </div>
     <div class="col-4 text-center">
-      <div class="text-secondary">${data.score.halftime.home} - ${data.score.halftime.away}</div>
+      <div class="badge bg-dark">${data.fixture.status.short} ${data.fixture.status.elapsed}'</div>
       <div class="h1">${data.goals.home} - ${data.goals.away}</div>
     </div>
     <div class="col-4">
       <img src="${data.teams.away.logo}" alt="${data.teams.away.name}" height=75>
     </div>
     <div class="col-12 text-center text-secondary my-3">
+      <div><strong>HT</strong> ${data.score.halftime.home} - ${data.score.halftime.away}</div>
       <div><i class="icofont-refree-jersey"></i> ${data.fixture.referee}</div>
       <div><i class="icofont-whistle-alt"></i> ${date}</div>
       <div><i class="icofont-location-pin"></i> ${data.fixture.venue.name}, ${data.fixture.venue.city}</div>
